@@ -13,7 +13,6 @@
 │   └── functions/
 ├── regulation/         # regulation analysis
 │   └── dataSave/       # intermediate outputs (provided via GitHub Releases)
-├── results/            # figures and outputs
 ├── spm/                # SPM-related scripts
 └── subtyping/          # subtype analysis
 ```
@@ -24,7 +23,15 @@
 
 This section provides a minimal pipeline to reproduce the main results.
 
-**1. Run Whole-Brain Modeling**
+**1. Subtyping**
+
+The scripts in the *subtyping* folder can be used to obtain two AMDD subtypes.
+
+⚠️ Notes
+
+Due to data access restrictions, the original data used for subtype classification cannot be publicly shared. This repository provides the complete analysis code along with group-level summary data for the two identified subtypes. The original data requires formal application and approval for access.
+
+**2. Run Whole-Brain Modeling**
 
 To perform large-scale whole-brain modeling for the two identified subtypes, run:
 
@@ -35,7 +42,7 @@ modeling/Modeling_dep2.m
 
 These scripts will generate the core modeling results for each subtype.
 
-**2. Run Regulation Analysis**
+**3. Run Regulation Analysis**
 
 After modeling, run the scripts in the *regulation* folder with the prefix:
 
@@ -45,20 +52,7 @@ fic_*.m
 
 These scripts implement different regulatory strategies and will produce the corresponding intervention results.
 
-**3. Reproduce Figures**
 
-The scripts in the *results* folder can be used to reproduce the figures reported in the paper.
-
-⚠️ Notes
-
-Make sure all required data files are placed in:
-
-```
-regulation/dataSave/
-```
-
-Some scripts depend on intermediate results generated in previous steps.
-Due to dataset restrictions, full end-to-end reproduction may require the original data.
 
 ---
 
