@@ -62,14 +62,9 @@ Some files are excluded via `.gitignore` due to GitHub size limitations.
 
 They are provided via GitHub Releases:
 
-https://github.com/xinzeng1996/AMDDsubtypes/releases
+https://github.com/xinzeng1996/AMDD_regulation/releases
 
 * The excluded files mainly correspond to **intermediate outputs from the `regulation` module**.
-* To **reproduce figures quickly**, please download these files and place them into:
-
-```
-regulation/dataSave/
-```
 
 ---
 
